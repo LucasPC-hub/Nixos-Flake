@@ -9,6 +9,9 @@ in {
 
     volume-up = spawn pactl [ "set-sink-volume" "@DEFAULT_SINK@" "+5%" ];
     volume-down = spawn pactl [ "set-sink-volume" "@DEFAULT_SINK@" "-5%" ];
+
+    screenshot = spawn "${pkgs.bash}/bin/bash" [ "-c" "${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp)\" - | ${pkgs.wl-clipboard}/bin/wl-copy" ];
+    screenshot-window = spawn "${pkgs.bash}/bin/bash" [ "-c" "${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp -w)\" - | ${pkgs.wl-clipboard}/bin/wl-copy" ];
   in {
 
     # DankMaterial Shell Keybinds
@@ -134,9 +137,9 @@ in {
     "Super+Shift+Minus".action = set-window-height "-10%";
     "Super+Shift+Equal".action = set-window-height "+10%";
 
-    # Screenshots (using correct niri actions)
+    # Screenshots
     "Control+Shift+1".action = screenshot;
-    "Control+Shift+2".action = screenshot-window { write-to-disk = true; };
+    "Control+Shift+2".action = screenshot-window;
     "Print".action = screenshot;
     "Ctrl+Print".action = screenshot;
     "Alt+Print".action = screenshot-window;

@@ -40,9 +40,13 @@
       url = "github:moonlight-mod/moonlight";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, chaotic, nur, nixvim, niri, quickshell, dankMaterialShell, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, chaotic, nur, niri, quickshell, dankMaterialShell, ... }@inputs: {
 
     # Expose NixOS configuration
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
