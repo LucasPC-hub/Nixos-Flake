@@ -1,17 +1,13 @@
-  {
-  config,
-  pkgs,
-  inputs,
-  ...
-}:
+{ config, pkgs, inputs, ... }:
 
 {
+  # Pacotes essenciais do sistema
+  # Ferramentas de desenvolvimento, utilitários e serviços base
+
   environment.systemPackages = with pkgs; [
     ly
     yarn
     git
-    pavucontrol
-    pulseaudio
     arrpc
     swww
     gnome-themes-extra
@@ -20,7 +16,6 @@
     mesa
     libva
     libva-utils
-    playerctl
     nh
     base16-schemes
     ddcutil
@@ -28,6 +23,5 @@
     hidapi
     tree
     piper
-    solaar
   ];
-  }
+}
