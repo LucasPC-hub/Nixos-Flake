@@ -1,0 +1,33 @@
+  {
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
+
+{
+  environment.systemPackages = with pkgs; [
+    ly
+    yarn
+    git
+    pavucontrol
+    pulseaudio
+    arrpc
+    swww
+    gnome-themes-extra
+    xwayland
+    ffmpeg
+    mesa
+    libva
+    libva-utils
+    playerctl
+    nh
+    base16-schemes
+    ddcutil
+    os-prober
+    hidapi
+    tree
+    piper
+    solaar
+  ];
+  }
