@@ -28,7 +28,6 @@ in
   nwg-look
   walker
   adw-gtk3-theme
-  libsForQt5.qt6ct
   # Development
   remmina
   jetbrains-toolbox

@@ -31,8 +31,6 @@ in
   programs.dankMaterialShell = {
     enable = true;
     enableSystemd = true;
-    enableGtkTheming = true;
-    enableQtTheming = true;
     niri = {
       enableKeybinds = true;
       enableSpawn = true;
