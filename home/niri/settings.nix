@@ -140,7 +140,9 @@
         XDG_BROWSER = "firefox";
         DISPLAY = ":0";
 
-        # Angular/Node optimization from old config
+        QT_QPA_PLATFORMTHEME = "qt6ct";
+        QT_QPA_PLATFORMTHEME_QT6 = "qt6ct";
+
         NODE_OPTIONS = "--max-old-space-size=8192";
       };
     };

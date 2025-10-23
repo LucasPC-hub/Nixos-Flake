@@ -15,6 +15,7 @@ in {
   in {
 
     # DankMaterial Shell Keybinds (outros atalhos são gerenciados pelo módulo DMS)
+    "Mod+D".action = spawn "dms" ["ipc" "spotlight" "toggle"];
 
 
     # Hotkey overlay

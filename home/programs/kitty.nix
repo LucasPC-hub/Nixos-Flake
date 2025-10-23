@@ -7,21 +7,16 @@
       size = lib.mkForce 12;
     };
     settings = {
-      # Window settings - only the essentials
       window_padding_width = 20;
       confirm_os_window_close = 0;
-      
-      # Display server
+
       linux_display_server = "auto";
-      
-      # Audio
+
       enable_audio_bell = false;
-      
-      # Disable ligatures (like your ghostty config)
+
       font_features = "none";
-      
-      # Let Stylix handle colors - don't override them
-      # This avoids conflicts with Stylix theming
+
+      include = "dank-theme.conf";
     };
     
     keybindings = {
