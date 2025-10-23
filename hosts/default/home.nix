@@ -66,6 +66,9 @@ in
 
   xdg.portal.enable = true;
 
+  xdg.configFile."gtk-3.0/gtk.css".force = true;
+  xdg.configFile."gtk-4.0/gtk.css".force = true;
+
   # Configure default applications
   xdg.mimeApps = {
     enable = true;
