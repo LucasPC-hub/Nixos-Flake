@@ -27,7 +27,7 @@ in
   # Desktop
   nwg-look
   walker
-  adw-gtk3-theme
+  adw-gtk3
   # Development
   remmina
   jetbrains-toolbox
