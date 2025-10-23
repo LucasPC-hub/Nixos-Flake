@@ -101,15 +101,14 @@
         ],
         "nixpkgs": [
           "nixpkgs"
-        ],
-        "quickshell": "quickshell"
+        ]
       },
       "locked": {
-        "lastModified": 1761142346,
-        "narHash": "sha256-8a98BQEcaKg38Iky779hrAXOpt6Vy67meh3CBxoaDOE=",
+        "lastModified": 1761187575,
+        "narHash": "sha256-azMXlVeXvy4tlz8GpPs9ikmoNGZzzTJyLit5oOOX+M8=",
         "owner": "AvengeMedia",
         "repo": "DankMaterialShell",
-        "rev": "378def1fa36229cc7f854f6e28401c507ab25a11",
+        "rev": "b2e55651103b60f494d0a9e2cba9012168c83cb6",
         "type": "github"
       },
       "original": {
@@ -664,27 +663,6 @@
     "quickshell": {
       "inputs": {
         "nixpkgs": [
-          "dankMaterialShell",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1760228179,
-        "narHash": "sha256-4Z6k7lv3Zcgk3K+4h60LpqB9wCkR+utkYERU735U068=",
-        "ref": "refs/heads/master",
-        "rev": "c9d3ffb6043c5bf3f3009202bad7e0e5132c4a25",
-        "revCount": 693,
-        "type": "git",
-        "url": "https://git.outfoxxed.me/quickshell/quickshell"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.outfoxxed.me/quickshell/quickshell"
-      }
-    },
-    "quickshell_2": {
-      "inputs": {
-        "nixpkgs": [
           "nixpkgs"
         ]
       },
@@ -695,11 +673,11 @@
         "rev": "3e2ce40b18af943f9ba370ed73565e9f487663ef",
         "revCount": 697,
         "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
+        "url": "https://git.outfoxxed.me/quickshell/quickshell"
       },
       "original": {
         "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
+        "url": "https://git.outfoxxed.me/quickshell/quickshell"
       }
     },
     "root": {
@@ -714,7 +692,7 @@
         "niri": "niri",
         "nixpkgs": "nixpkgs_5",
         "nur": "nur",
-        "quickshell": "quickshell_2",
+        "quickshell": "quickshell",
         "stylix": "stylix",
         "zen-browser": "zen-browser"
       }

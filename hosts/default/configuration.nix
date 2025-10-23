@@ -24,6 +24,7 @@
     # Programas e serviços
     "${self}/system/programs/steam.nix"
     "${self}/system/programs/docker.nix"
+    "${self}/system/programs/stylix.nix"
     "${self}/system/programs/openfortivpn.nix"
 
     # Sistema

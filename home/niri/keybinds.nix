@@ -14,13 +14,7 @@ in {
     screenshot-window = spawn "${pkgs.bash}/bin/bash" [ "-c" "${pkgs.grim}/bin/grim -g \"$(${pkgs.slurp}/bin/slurp -w)\" - | ${pkgs.wl-clipboard}/bin/wl-copy" ];
   in {
 
-    # DankMaterial Shell Keybinds
-    "Super+D".action = spawn ["qs" "ipc" "call" "spotlight" "toggle"];
-    "Super+V".action = spawn ["qs" "ipc" "call" "clipboard" "toggle"];
-    "Super+M".action = spawn ["qs" "ipc" "call" "processlist" "toggle"];
-    "Super+N".action = spawn ["qs" "ipc" "call" "notifications" "toggle"];
-    "Super+Comma".action = spawn ["qs" "ipc" "call" "settings" "toggle"];
-    "Super+Alt+L".action = spawn ["qs" "ipc" "call" "lock" "lock"];
+    # DankMaterial Shell Keybinds (outros atalhos são gerenciados pelo módulo DMS)
 
 
     # Hotkey overlay
@@ -42,40 +36,10 @@ in {
     "Super+Shift+F".action = fullscreen-window;
     "Super+C".action = center-column;
 
-    # Audio controls - DankMaterial Shell
-    "XF86AudioRaiseVolume" = {
-      action = spawn ["qs" "ipc" "call" "audio" "increment" "3"];
-      allow-when-locked = true;
-    };
-    "XF86AudioLowerVolume" = {
-      action = spawn ["qs" "ipc" "call" "audio" "decrement" "3"];
-      allow-when-locked = true;
-    };
-    "XF86AudioMute" = {
-      action = spawn ["qs" "ipc" "call" "audio" "mute"];
-      allow-when-locked = true;
-    };
-    "XF86AudioMicMute" = {
-      action = spawn ["qs" "ipc" "call" "audio" "micmute"];
-      allow-when-locked = true;
-    };
-
-    # Brightness controls (keep your existing ddcutil script)
-    "Control+Super+XF86AudioRaiseVolume".action = spawn "brightness" "up";
-    "Control+Super+XF86AudioLowerVolume".action = spawn "brightness" "down";
-
     # Media controls
     "XF86AudioPlay".action = spawn ["playerctl" "play-pause"];
     "XF86AudioNext".action = spawn ["playerctl" "next"];
     "XF86AudioPrev".action = spawn ["playerctl" "previous"];
-    "XF86MonBrightnessUp" = {
-      action = spawn ["qs" "ipc" "call" "brightness" "increment" "5" ""];
-      allow-when-locked = true;
-    };
-    "XF86MonBrightnessDown" = {
-      action = spawn ["qs" "ipc" "call" "brightness" "decrement" "5" ""];
-      allow-when-locked = true;
-    };
 
     # Focus movement
     "Super+Left".action = focus-column-left;
