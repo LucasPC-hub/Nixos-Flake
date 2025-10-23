@@ -14,6 +14,7 @@
     "${self}/system/fonts.nix"
     "${self}/system/users.nix"
     "${self}/system/security.nix"
+    "${self}/system/greeter/ly.nix"
 
     # Hardware
     "${self}/system/hardware/nvidia.nix"

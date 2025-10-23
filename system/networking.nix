@@ -11,10 +11,14 @@
     # NetworkManager para gerenciamento fácil de redes
     networkmanager = {
       enable = true;
-      # IWD é mais moderno e eficiente que wpa_supplicant
-      wifi.backend = "iwd";
-      # Desabilita powersave para melhor latência
+      wifi.backend = "wpa_supplicant";
       wifi.powersave = false;
+    };
+
+    # Desabilita wpa_supplicant standalone para evitar conflito com NetworkManager
+    wireless = {
+      enable = false;
+      userControlled.enable = false;
     };
 
     # Firewall com porta Angular para desenvolvimento

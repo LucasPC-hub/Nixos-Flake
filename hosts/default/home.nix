@@ -25,7 +25,18 @@ in
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
     inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
   ];
+
   programs.zen-browser.enable = true;
+
+  programs.dankMaterialShell = {
+    enable = true;
+    enableSystemd = true;
+    niri = {
+      enableKeybinds = true;
+      enableSpawn = true;
+    };
+  };
+
   home.packages = allPackages;
 
 
