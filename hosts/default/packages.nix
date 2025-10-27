@@ -54,7 +54,7 @@ in
   lazydocker
   kdePackages.dolphin
   yazi
-
+  jamesdsp
   # Quickshell stuff
   qt6Packages.qt5compat
   libsForQt5.qt5.qtgraphicaleffects
